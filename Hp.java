@@ -1,0 +1,6 @@
+class Hp extends Laptop{
+
+     
+
+
+}
