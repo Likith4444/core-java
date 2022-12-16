@@ -1,0 +1,3 @@
+class Rolex extends Watch{
+
+}

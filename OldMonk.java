@@ -1,0 +1,3 @@
+class OldMonk extends Alcohol{
+
+}
