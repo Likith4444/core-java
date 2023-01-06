@@ -1,0 +1,91 @@
+1.EXPLAIN:
+
+   1. public static void main(String arg[])
+  
+    Its main method where the program flow starts and the program access the differnt classes 
+    if req in the program based on the requirement of a given programme.
+    
+    public is the keyword which defines the accesibility of the data within.
+    static is also a keyword which defines the type of variable the main is.
+    void specifies the the type of data the main method return at the end of the program main.
+    
+  
+   2.class and object
+  
+    A class is a blueprint or a virtual structure consisting of set of codes with states and 
+    behaviours that are variables and methods in a programme. 
+
+    An object is a instance of class.
+    Its a copy of class which acts similar to a class at given instance of time.
+
+ 
+   3.JVM,JRE,JDK
+  
+    JDK - JAVA DEVELOPEMENT KIT 
+    JDK is the component of java which provides the enviroment to built applications and 
+    components in a java programme.
+
+    JRE - JAVA RUNTIME ENVIRONMENT
+    JRE is the component of java which is the underlying component that communicates 
+    between a java programme and the operating software.
+
+    JVM - JAVA VIRTUAL MACHINE
+    JVM is the component of java which reads,verifies,interprets and displays the byte 
+    code of a java programme given from the java compiler of the JDK.
+
+
+4.EXPLAIN THE CONSTRUCTOR AND ITS TYPES:
+
+  Constructor is a special type of method which has the same name as the class name and 
+  has no return type and can have parameters or no parametes in the paranthesis.
+
+  there are 2 types of constructors ;
+  a. Defualt constructor: defualt constructor are created when an object is created and
+     this constructor does not have any parameters.
+
+  b. Parameterized constructor: parameterized cvonstructor are defined by the developer
+     where the constructor consists of some parametes in it.
+
+
+5.DIFFERENCE BTW this keyword AND this()
+
+  this -- this is a keyword which differentiates between parameterized variables and other
+          variables in a java programme.
+  
+  this() -- this() is a predefined method in java.
+
+
+7.WHY MAIN METHOD IS STATIC AND EXPLAIN THE METHOD TYPES.
+
+  The main method is made static because the static data is accessible throughout the class 
+  easily and is active till the end of the java code.
+  
+  The types of methods are;
+  a. Userdefined methods
+     Userdefined method are the methods which are defined by the user to perform certain 
+     fuctionality or operations in the java programme as required by the user.
+
+  b. Predefined methods
+     Predefined methods are the methods which are already defined by the java so as to make
+     code simpler to the user and reducing the number of lines of codes by the predefined methods.
+
+
+9.WHAT IS JAVA CLASS LOADING AND EXPLAIN JAVA CLASS LOADER.
+ 
+   Java class loading is the process in which the .class file also known as the byte code comes onto
+   the JVM from the JRE where the J compiler converts the .java file to .class file and is passed 
+   onto the JVM. Then the JVM loads all the byte code onto it and then sends it to read ,verify and 
+   interpret the code. The JVM alone performs operation of loading,reading,verifying,and interpreting
+   the byte code also know as .class file . In java JVM is called as the .class loader
+
+
+
+10.CAN WE HAVE PRIVATE CONSTRUCTOR AND CAN WE OVERLOAD THE CONSTRUCTOR EXPLAIN WITH EX
+
+
+   We cannot have a private constructor in java.
+   The reason is constructor created when an object is created and an object is an instance of class or
+   a copy of class. So the class is always has public accessibility so due to this reason we cannot have
+   a constructor with private.
+
+

@@ -1,3 +1,0 @@
-class Vijay extends Developer{
-
-}

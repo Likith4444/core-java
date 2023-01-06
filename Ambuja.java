@@ -1,3 +1,0 @@
-class Ambuja extends Cement{
-
-}

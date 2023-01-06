@@ -1,3 +1,0 @@
-class Gear extends Bag{
-
-}

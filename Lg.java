@@ -1,3 +1,0 @@
-class Lg extends Refridgerator{
-
-}
