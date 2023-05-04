@@ -1,12 +1,16 @@
 package com.xworkz.laptop.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
 @Getter
 @Setter
 @ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class LaptopDTO {
 	
 	private int id;
@@ -15,5 +19,7 @@ public class LaptopDTO {
 	private String color;
 	private String processor ;
 	private String ram;
+	private String emailId;
+	//private String password;
 	
 }

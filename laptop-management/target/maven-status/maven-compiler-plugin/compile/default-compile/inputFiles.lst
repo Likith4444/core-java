@@ -1,4 +1,9 @@
+E:\Eclipse\laptop-management\src\main\java\com\xworkz\laptop\exception\LaptopException.java
 E:\Eclipse\laptop-management\src\main\java\com\xworkz\laptop\dto\LaptopDTO.java
+E:\Eclipse\laptop-management\src\main\java\com\xworkz\laptop\repository\LaptopRepositoryImpl.java
+E:\Eclipse\laptop-management\src\main\java\com\xworkz\laptop\service\LaptopServiceImpl.java
 E:\Eclipse\laptop-management\src\main\java\com\xworkz\laptop\config\LaptopWebInit.java
 E:\Eclipse\laptop-management\src\main\java\com\xworkz\laptop\config\SpringConfiguration.java
 E:\Eclipse\laptop-management\src\main\java\com\xworkz\laptop\controller\LaptopController.java
+E:\Eclipse\laptop-management\src\main\java\com\xworkz\laptop\repository\LaptopRepository.java
+E:\Eclipse\laptop-management\src\main\java\com\xworkz\laptop\service\LaptopService.java
