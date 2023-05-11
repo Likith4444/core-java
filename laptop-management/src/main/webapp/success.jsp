@@ -13,6 +13,10 @@ background-color:aqua; ;
 text-align: center;
 
 }
+body{
+
+background-color: gray;
+}
 </style>
 </head>
 <body>
@@ -31,21 +35,26 @@ text-align: center;
 
 <table border="3">
 <tr>
+<th>Id</th>
 <th>Company Name</th>
 <th>Model Number</th>
 <th>Color</th>
 <th>Processor</th>
 <th>Ram</th>
 <th>EmailId</th>
+<th>ACTION</th>
 </tr>
 
 <ref:forEach items="${laptops}" var="laptop">
 <tr>
+<td>${ laptop.getId() }</td>
 <td>${ laptop.getCompanyName() }</td>
 <td>${ laptop.getModelNo() }</td>
 <td>${ laptop.getColor() }</td>
 <td>${ laptop.getProcessor() }</td>
 <td>${ laptop.getRam() }</td>
+<td>${ laptop.getEmailId() }</td>
+<td><a href="update/${laptop.getId()}">Update</a></td>
 </tr>
 </ref:forEach>
 </table>

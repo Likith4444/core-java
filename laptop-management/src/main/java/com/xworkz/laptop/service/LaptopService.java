@@ -13,4 +13,8 @@ public interface LaptopService {
 	 List<LaptopDTO> getAllLaptopsSer();
 
 	List<LaptopDTO> getLaptopByCompanyNameSer(String companyName);
+
+	LaptopDTO getLapatopByIdSer(int id);
+
+	LaptopDTO updateLaptopByIdServ(LaptopDTO dto);
 }

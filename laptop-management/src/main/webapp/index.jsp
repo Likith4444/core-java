@@ -5,6 +5,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Laptop Management</title>
+<style>
+body{
+text-align: center;
+background-color: gray;
+}
+
+
+</style>
 </head>
 <body>
 <form action="registerLaptop" method="post">
@@ -17,7 +25,7 @@ Ram :  <input type="text" name="ram" ><br><br>
 Email Id: <input type="text" name="emailId"><br><br>
 <!-- Password: <input type="text" name="password"><br><br> -->
 
-<input type="submit" value="submit">
+<input type="submit" value="Submit">
 
 </form>
 </body>

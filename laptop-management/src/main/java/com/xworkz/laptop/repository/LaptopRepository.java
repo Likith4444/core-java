@@ -12,4 +12,8 @@ public interface LaptopRepository {
 
 	List<LaptopDTO> getLaptopByCompanyNameRep(String companyName);
 
+	LaptopDTO getLapatopByIdRepo(int id);
+
+	LaptopDTO updateLaptopByIdRepo(LaptopDTO dto);
+
 }

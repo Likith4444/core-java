@@ -141,5 +141,19 @@ public class LaptopServiceImpl implements LaptopService{
 		return laptopRepo.getLaptopByCompanyNameRep(companyName);
 	}
 
+	@Override
+	public LaptopDTO getLapatopByIdSer(int id) {
+		
+		System.out.println("inside updateLaptopServ method..");
+		return laptopRepo.getLapatopByIdRepo(id);
+	}
+
+	@Override
+	public LaptopDTO updateLaptopByIdServ(LaptopDTO dto) {
+		
+		System.out.println("inside updateLaptopByIdServ method");
+		return laptopRepo.updateLaptopByIdRepo(dto);
+	}
+
 	
 }

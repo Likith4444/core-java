@@ -1,21 +1,16 @@
 package com.xworkz.laptop.controller;
 
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.util.List;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -74,7 +69,29 @@ public class LaptopController {
 		return "success";
 		
 	}
+	
+	@GetMapping("/update/{id}")
+	public String getLaptopById(@PathVariable("id")int id, HttpServletRequest req1){
 		
+		System.out.println("Inside getLaptopById method");
+		LaptopDTO dto = service.getLapatopByIdSer(id);
+
+	    req1.setAttribute("laptop", dto);
+	             
+		return "update";
+		
+	}
+	
+	@PostMapping("/updatee")
+	public String updateLaptopById(@ModelAttribute LaptopDTO dto, HttpServletRequest req2) {
+		
+		System.out.println("inside updateLaptopById method");
+		LaptopDTO dtos = service.updateLaptopByIdServ(dto);
+		req2.setAttribute("laptop", dtos);
+		
+		return "success";
+		
+	}
 		
 	
 	
