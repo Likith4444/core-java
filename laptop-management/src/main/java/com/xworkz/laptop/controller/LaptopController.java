@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.view.RedirectView;
 
 import com.xworkz.laptop.dto.LaptopDTO;
 import com.xworkz.laptop.service.LaptopService;
@@ -92,6 +94,27 @@ public class LaptopController {
 		return "success";
 		
 	}
+	
+	@GetMapping("/delete/{id}")
+	public  RedirectView deleteById(@PathVariable("id") int id,HttpServletRequest req) {
+	List<LaptopDTO> list = service.deleteByLaptopIdServ(id);
+		
+		req.setAttribute("laptop", list);
+		RedirectView rd = new RedirectView();
+		System.out.println("....!!!!!!!...");
+		rd.setUrl(req.getContextPath());
+		rd.setUrl(req.getContextPath() + "/listOfLaptops");
+		return rd;
+		//redirect view
+		//return "success";
+		//css for register page
+		//mail - jee
+		//types of servers - 3 - web,application,database server
+		//@WebServlet
+		//JEE container is the one who will create the context servlet and config file (Servlet container)
+		//context is an object created and this context contains the url and application name when method getContext is called
+		//context is an url of the web application deployed
+    }
 		
 	
 	

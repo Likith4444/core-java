@@ -42,7 +42,8 @@ background-color: gray;
 <th>Processor</th>
 <th>Ram</th>
 <th>EmailId</th>
-<th>ACTION</th>
+<th>ACTION-1</th>
+<th>ACTION-2</th>
 </tr>
 
 <ref:forEach items="${laptops}" var="laptop">
@@ -55,6 +56,7 @@ background-color: gray;
 <td>${ laptop.getRam() }</td>
 <td>${ laptop.getEmailId() }</td>
 <td><a href="update/${laptop.getId()}">Update</a></td>
+<td><a href="delete/${laptop.getId()}">Delete</a></td>
 </tr>
 </ref:forEach>
 </table>

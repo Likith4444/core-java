@@ -17,4 +17,6 @@ public interface LaptopService {
 	LaptopDTO getLapatopByIdSer(int id);
 
 	LaptopDTO updateLaptopByIdServ(LaptopDTO dto);
+
+	List<LaptopDTO> deleteByLaptopIdServ(int id);
 }

@@ -16,4 +16,6 @@ public interface LaptopRepository {
 
 	LaptopDTO updateLaptopByIdRepo(LaptopDTO dto);
 
+	List<LaptopDTO> deleteByLaptopIdRepo(int id);
+
 }

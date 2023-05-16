@@ -191,7 +191,37 @@ public class LaptopRepositoryImpl implements LaptopRepository{
 		return dto;
 	}
 
-	
-	       
-	//this.dto;
+	@Override
+	public List<LaptopDTO> deleteByLaptopIdRepo(int id) {
+		
+		List<LaptopDTO> list = new ArrayList<LaptopDTO>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connection =DriverManager.getConnection("jdbc:mysql://localhost:3306/trends", "root", "Xworkzodc@123");
+			String querry="delete from lap_details where id=?";
+			PreparedStatement statement =connection.prepareStatement(querry);
+			statement.setInt(1, id);
+			int i = statement.executeUpdate();
+			ResultSet rs=statement.executeQuery();
+			while(rs.next()) {
+
+				LaptopDTO dtos = new LaptopDTO();
+				dtos.setId(rs.getInt(1));
+				dtos.setCompanyName(rs.getString(2));
+				dtos.setModelNo(rs.getString(3));
+				dtos.setColor(rs.getString(4));
+				dtos.setProcessor(rs.getString(5));
+				dtos.setRam(rs.getString(6));
+				dtos.setEmailId(rs.getString(7));
+				
+				list.add(dtos);
+			}
+
+		}catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("invalid data is entered...exception occured");
+		}
+		return list;
+	}
+
 }

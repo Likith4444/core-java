@@ -155,5 +155,12 @@ public class LaptopServiceImpl implements LaptopService{
 		return laptopRepo.updateLaptopByIdRepo(dto);
 	}
 
+	@Override
+	public List<LaptopDTO> deleteByLaptopIdServ(int id) {
+		
+		System.out.println("inside deleteByLaptopId method");
+		return laptopRepo.deleteByLaptopIdRepo(id);
+	}
+
 	
 }
